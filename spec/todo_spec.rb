@@ -2,6 +2,10 @@ require('rspec')
 require('todo')
 
 describe(Todo) do
+  before() do
+    Todo.clear()
+  end
+  
   describe("#description") do
     it("lets you give a description") do
       test_task = Todo.new("commit the code")
@@ -30,4 +34,5 @@ describe(Todo) do
       expect(Todo.all()).to(eq([]))
     end
   end
+
 end
