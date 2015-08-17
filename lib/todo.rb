@@ -1,8 +1,8 @@
 class Todo
   @@all_tasks = []
 
-  define_method(:initialize) do |description|
-    @description = description
+  define_method(:initialize) do |attributes|
+    @description = attributes.fetch(:description)
   end
 
   define_method(:description) do
@@ -19,5 +19,9 @@ class Todo
 
   define_singleton_method(:clear) do
     @@all_tasks = []
+  end
+
+  define_method(:==) do |another_task|
+    self.description().==(another_task.description())
   end
 end

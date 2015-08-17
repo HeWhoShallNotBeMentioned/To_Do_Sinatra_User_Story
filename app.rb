@@ -4,7 +4,7 @@ also_reload("lib/**/*.rb")
 require("./lib/todo")
 require('pg')
 
-DB = PG.connect({dbname => "to_do"})
+# DB = PG.connect({:dbname => "to_do"})
 
 get("/") do
   @tasks = Todo.all()
