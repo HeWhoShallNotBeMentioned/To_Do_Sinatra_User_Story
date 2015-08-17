@@ -1,10 +1,16 @@
 require('rspec')
+require('pg')
 require('todo')
 
-describe(Todo) do
-  before() do
-    Todo.clear()
+DB = PG.connect({dbname => 'to_do_test'})
+
+RSpec.configure do |configure|
+  config.after(:each) do
+    DB.exec("DELETE FROM tasks *;")
   end
+end
+
+describe(Todo) do
   
   describe("#description") do
     it("lets you give a description") do
