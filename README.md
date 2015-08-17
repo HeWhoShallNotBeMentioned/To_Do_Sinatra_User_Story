@@ -1,8 +1,8 @@
-# _Word Count_
+# _To Do_
 
-##### _A simple to-do app, 8/11/2015_
+##### _A simple to-do app, 8/17/2015_
 
-#### By _**Lindsay Culver & Austin Kincaid**_
+#### By _**Chris Underwood, Lindsay Culver, & Austin Kincaid**_
 
 ## Description
 
@@ -21,7 +21,7 @@ _Ruby, Sinatra, Rspec, and Capybara._
 
 ### Legal
 
-Copyright (c) 2015 **_Lindsay Culver & Austin Kincaid_**
+Copyright (c) 2015 **_Chris Underwood, Lindsay Culver, & Austin Kincaid_**
 
 This software is licensed under the MIT license.
 
