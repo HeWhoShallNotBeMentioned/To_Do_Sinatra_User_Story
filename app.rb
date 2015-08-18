@@ -6,15 +6,14 @@ also_reload("lib/**/*.rb")
 require('pg')
 
 
-DB = PG.connect({:dbname => "to_do"})
+DB = PG.connect({:dbname => "to_do_test"})
 
 get("/") do
-  #@tasks = Todo.all()
   erb(:index)
 end
 
 get("/lists/new") do
-  erb:(:list_form)
+  erb(:list_form)
 end
 
 post("/lists") do
@@ -30,3 +29,8 @@ end
 #   task.save()
 #   erb(:success)
 # end
+
+get('/lists') do
+  @lists = List.all()
+  erb(:lists)
+end
