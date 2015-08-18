@@ -1,8 +1,8 @@
 # _To Do_
 
-##### _A simple to-do app, 8/17/2015_
+##### _A simple to-do app, 8/18/2015_
 
-#### By _**Chris Underwood, Lindsay Culver, & Austin Kincaid**_
+#### By _**Chris Underwood, Lindsay Culver, & Austin Kincaid, Jing Wait**_
 
 ## Description
 
